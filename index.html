@@ -15,12 +15,16 @@
 
       <div class="dice-box">
         <div class="dice">
-          <p>Player 1</p>
+          <p>xí ngầu 1</p>
           <img class="img1" src="./dice6.png" />
         </div>
         <div class="dice">
-          <p>Player 2</p>
+          <p>xí ngầu 2</p>
           <img class="img2" src="./dice6.png" />
+        </div>
+        <div class="dice">
+          <p>xí ngầu 3</p>
+          <img class="img3" src="./dice6.png" />
         </div>
       </div>
       <button onclick="generate()">click để bắt đầu</button>
@@ -28,5 +32,18 @@
 
     <footer>www 🎲 Tham gia để đổi đời 🎲 com</footer>
     <script src="./app.js"></script>
+    <script type="text/javascript">
+      (function(d, t) {
+          var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+          v.onload = function() {
+            window.voiceflow.chat.load({
+              verify: { projectID: '662cf1e3bb1f7f890fbfc0a3' },
+              url: 'https://general-runtime.voiceflow.com',
+              versionID: 'production'
+            });
+          }
+          v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+      })(document, 'script');
+    </script>
   </body>
 </html>
